@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Abhimanyu Singh">
+    <meta name="description" content="Survey Form using HTML amd CSS">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Survey Form</title>
+    <link rel="icon" href="logo.png" type="image/x-con">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="validate.js"></script>
+</head>
+<body>
+    <div class="group">
+        <!--Heading-->
+        <header class="header">
+            <h1 id="title" class="heading">Product Survey Form</h1>
+            <h3 id="description" class="heading text-center">Thank you for using our product and taking your time to help us improve the same !</h3>
+            <br>
+        </header>
+    </div>
+
+    <!--Form-->
+    <form id="form" action="/">
+
+        <!--Details of participant-->
+        <!--Name-->
+        <div class="form-group">
+            <label for="name-label" id="name"><b>Name</b></label>
+            <br>
+            <input type="text" id="username" class="form-input" placeholder="Enter your name" class="formbox" autofocus >
+            <div class="error"></div>
+        </div>
+        <br><br>
+
+        <!--Email-->
+        <div class="form-group">
+            <label for="email-label"><b>Email Id</b></label>
+            <br>
+            <input type="text" id="email" class="form-input" placeholder="Enter your email id">
+            <div class="error"></div>
+        </div>
+        <br><br>
+
+        <!--Number-->
+        <div class="form-group">
+            <label for="number-label"><b>Mobile Number</b></label>
+            <br>
+            <input type="tel" id="number" class="form-input" placeholder="Enter your number">
+            <div class="error"></div>
+        </div>
+        <br><br>
+
+        <!--Age-->
+        <div class="form-group">
+            <label for="age-label"><b>Age</b></label>
+            <br>
+            <input type="tel" id="age" class="form-input" placeholder="Enter your age">
+            <div class="error"></div>
+        </div>
+        <br><br><br>
+
+        <!--Role-->
+        <div class="form-group">
+            <label><b>Which of the following options describe your current role?</b></label>
+            <br>
+            <select name="role" id="dropdown" class="role-input" required>
+                <option>Select your current role</option>
+                <option value="Student">Student</option>
+                <option value="Working Professional">Working Professional</option>
+                <option value="Businessperson">Businessperson</option>
+                <option value="Homemaker">Homemaker</option>
+                <option value="Others">Others</option>
+            </select>
+            <div class="error"></div>
+            <br>
+        </div>
+        <div>
+            <br>
+            <label><i><b>If others, please specify (optional)</b></i></label>
+            <br>
+            <input type="text" id="optional" class="form-input" placeholder="Enter your role">
+        </div>
+        <br><br><br>
+        
+        <!--Gender-->
+        <div class="form-group">
+            <label for="gender-label" id="gender"><b>Choose your gender</b></label>
+            <br>
+            <label for="gender1">
+                <input type="radio" id="gender1" class="gender-input" name="gender"><b>Male</b></input>
+            </label>
+            <br>
+            <label for="gender2">
+                <input type="radio" id="gender2" class="gender-input" name="gender"><b>Female</b></input>
+            </label>
+            <br>
+            <label for="gender3">
+                <input type="radio" id="gender3" class="gender-input" name="gender"><b>Other</b></input>
+            </label>
+        </div><br>
+        <div class="gen" id="gen"></div>
+        <br><br>
+
+       <!--Product Review-->
+        <!--Rating-->
+        <div class="form-group">
+            <label for="rating-label" id="rating"><b>On the scale of 1-5, how much would you rate the product?</b></label>
+            <br>
+            <label for="rate" id="rating">
+                <input type="radio" id="rate1" class="star-input" name="rating">1&ensp;</input>
+            </label>
+            <label for="rate" id="rating">
+                <input type="radio" id="rate2" class="star-input" name="rating">2&ensp;</input>
+            </label>
+            <label for="rate" id="rating">
+                <input type="radio" id="rate3" class="star-input" name="rating">3&ensp;</input>
+            </label>
+            <label for="rate" id="rating">
+                <input type="radio" id="rate4" class="star-input" name="rating">4&ensp;</input>
+            </label>
+            <label for="rate" id="rating">
+                <input type="radio" id="rate5" class="star-input" name="rating">5&ensp;</input>
+            </label>
+        </div><br>
+        <div class="rat" id="rat"></div>
+        <br><br>
+
+        <!--Question-->
+        <div class="form-group">
+            <label for="q1-label" id="q1"><b>What made you buy this product?</b></label>
+            <br>
+            <label for="choose1">
+                <input type="checkbox" id="choose1" class="box-input" name="q1"><b>Positive reviews</b></input>
+            </label>
+            <br>
+            <label for="choose2">
+                <input type="checkbox" id="choose2" class="box-input" name="q1"><b>Personal recomandation</b></input>
+            </label>
+            <br>
+            <label for="choose3">
+                <input type="checkbox" id="choose3" class="box-input" name="q1"><b>Brand value</b></input>
+            </label>
+            <br>
+            <label for="choose4">
+                <input type="checkbox" id="choose4" class="box-input" name="q1"><b>Good marketing</b></input>
+            </label><br>
+            <label for="choose5">
+                <input type="checkbox" id="choose5" class="box-input" name="q1"><b>Other</b></input>
+            </label><br>
+        </div><br>
+        <div class="ques" id="ques"></div>
+        <br><br>
+
+        <label><i><b>Other reason? Specify (optional)</b></i></label>
+            <br>
+            <input type="text" id="role" class="form-input" placeholder="Enter your reasons">
+        <br><br>
+
+        <!--Recommandation-->
+        <div class="form-group">
+            <label for="recommandation-label" id="recommandation" ><b>Would you recommand the product to others?</b></label>
+            <br>
+            <label for="option1">
+                <input type="radio" id="option1" class="rec-input" name="recomandation"><b>Yes! Definitely</b></input>
+            </label>
+            <br>
+            <label for="option2">
+                <input type="radio" id="option2" class="rec-input" name="recomandation"><b>Maybe</b></input>
+            </label>
+            <br>
+            <label for="option3">
+                <input type="radio" id="option3" class="rec-input" name="recomandation"><b>Not Sure</b></input>
+            </label>
+        </div><br>
+        <div class="rec" id="rec"></div>
+        <br><br>
+
+        <!--Suggestion-->
+        <div class="form-group">
+            <label for="suggestion"><b>Your feedback and suggestions would be valued! Drop down below.</b></label>
+            <br>
+            <textarea name="suggestion" id="suggestion" class="sugg-input" cols="70" rows="10" placeholder="Enter your feedback and suggestions here..."></textarea>
+        </div>
+        <br><br><br>
+
+        <!--Submit button-->
+        <button type="submit" id="submit" class="sub">Submit</button>
+    </form>
+    <div id="l"></div>
+    <div class="copy">
+        Copyright <b>&copy;</b> <b>Abhimanyu Singh</b>
+    </div>
+</body>
+</html>

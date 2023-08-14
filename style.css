@@ -1,0 +1,73 @@
+body {
+  background-color: #141119;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+form {
+  background-color: #687175;
+  text-align: left;
+  padding: 4.0rem 3.0rem;
+  border-radius: 0.25rem;
+  margin-bottom: 50px;
+  box-shadow: 3px 6px 9px rgb(73, 73, 73);
+  display: inline-block;
+}
+
+.heading {
+  color: white;
+}
+
+.form-input{
+  display: block;
+  width: 90%;
+  height: 2.5rem;
+  padding: 0.25rem 1.1rem;
+  border-radius: 2.5rem;
+  border-top: white;
+  border-left: white;
+  border-color: white;
+}
+
+.role-input {
+  display: block;
+  width: 96.5%;
+  height: 3.1rem;
+  padding: 0.25rem 1.1rem;
+  border-radius: 0.4rem;
+  border-color: white;
+}
+
+.gender-input, .star-input, .box-input, .rec-input  {
+  width: 40px;
+  height: 21px;
+  margin-top: 0.7rem;
+  border-color: white;
+}
+
+.sugg-input {
+  width: 90%;
+  height: 9.5rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 0.5rem;
+  border-color: white;
+  border-style: outset;
+  resize: vertical;
+}
+
+.sub {
+  display: block;
+  background-color: #8338ec;
+  color: white;
+  width: 105px;
+  height: 45px;
+  padding: 0.7rem 17rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.copy {
+  background-color: white;
+}
